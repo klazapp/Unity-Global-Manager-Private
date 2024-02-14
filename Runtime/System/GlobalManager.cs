@@ -26,12 +26,12 @@ namespace com.Klazapp.Utility
         #endregion
         
         #region Lifecycle Flow
-        public static void OnFixedUpdate()
+        private void FixedUpdate()
         {
             fixedDeltaTime = Time.fixedDeltaTime;
         }
 
-        public static void OnUpdate()
+        private void Update()
         {
             deltaTime = Time.deltaTime;
             smoothDeltaTime = Time.smoothDeltaTime;
