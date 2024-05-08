@@ -1,6 +1,6 @@
 {
   "name": "com.klazapp.globalmanager",
-  "displayName": "Klazapp Global Manager",
+  "displayName": "Unity Global Manager",
   "version": "1.0.0",
   "unity": "2022.3",
   "description": "This custom editor helper tool development",
@@ -15,7 +15,7 @@
       "email": "klazapp@klazapp.com",
       "url": "https://www.klazapp.com"
     },
-    "documentationUrl": "https://github.com/klazapp/Unity-Global-Manager-Public",
-    "changelogUrl": "https://github.com/klazapp/Unity-Global-Manager-Public",
-    "licensesUrl": "https://github.com/klazapp/Unity-Global-Manager-Public"
+    "documentationUrl": "https://github.com/klazapp/Unity-Global-Manager-Private",
+    "changelogUrl": "https://github.com/klazapp/Unity-Global-Manager-Private",
+    "licensesUrl": "https://github.com/klazapp/Unity-Global-Manager-Private"
 }
