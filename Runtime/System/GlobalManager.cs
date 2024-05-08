@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace com.Klazapp.Utility
 {
-    [ScriptHeader("Global manager provides a central basic data retrieval end point. It contains basic data such as Time.deltaTime and WaitForSeconds")]
     public class GlobalManager : MonoBehaviour
     {
         #region Variables
