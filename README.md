@@ -1,34 +1,46 @@
-# Global Manager Utility for Unity
+# Global Manager for Unity
 
 ## Introduction
-The `Global Manager` utility, part of the `com.Klazapp.Utility` namespace, is a design pattern or architectural concept used to manage and coordinate various aspects of a game or application from a central location. A global manager typically encapsulates functionality related to game state management, resource management, scene management, event handling, and more.
+
+The Global Manager, offered under the `com.Klazapp.Utility` namespace, is a Unity package designed to centralize common game management tasks and frequently accessed Unity data. This utility streamlines access to time-related variables, default transform values, and preconfigured WaitForSeconds, enhancing efficiency and reducing repetitive code across your project.
 
 ## Features
-- A global manager can manage the overall state of the game, including aspects such as game initialization, loading, pausing, resuming, and quitting. It may maintain variables or properties representing the current game state (e.g., playing, paused, game over).
-- Global managers can handle the loading, unloading, and caching of game assets and resources, such as textures, models, audio files, and prefabs. They may provide methods to efficiently load assets on-demand and manage memory usage.
-  
+
+- **Centralized Time Management:** Provides static access to various time-related values like `deltaTime`, `smoothDeltaTime`, and `fixedDeltaTime`, ensuring consistent and easy updates across all scripts.
+- **Default Transform Constants:** Includes predefined `float3` and `quaternion` values for default positions and rotations, facilitating easier transformations and resets.
+- **Optimized WaitForSeconds:** Predefined WaitForSeconds instances ranging from 0.6 seconds to 5 seconds, optimizing coroutine performance by reducing the need for repeated instantiation.
+
 ## Dependencies
-To use `Global Manager`, certain dependencies are required. Ensure these are included in your Unity project.
-- **Unity Version**: Minimum Unity 2020.3 LTS.
-- **Unity Mathematics DLL**
+
+- **Unity Version:** Requires Unity 2019.4 LTS or newer for optimal performance and compatibility.
+- **Unity Mathematics Package:** Utilized for vector and quaternion calculations.
 
 ## Compatibility
-| Compatibility        | URP | BRP | HDRP |
-|----------------------|-----|-----|------|
-| Compatible           | ✔️  | ✔️  | ✔️   |
+
+The Global Manager is compatible with various Unity versions and rendering pipelines. It functions primarily within the Unity engine's scripting environment, ensuring broad usability.
+
+| Compatibility | URP | BRP | HDRP |
+|---------------|-----|-----|------|
+| Compatible    | ✔️   | ✔️   | ✔️    |
 
 ## Installation
-1. Open the Unity Package Manager (`Window` > `Package Manager`).
-2. Click `+`, select `Add package from git URL...`, and enter `https://github.com/klazapp/Unity-Global-Manager-Public.git`.
-3. Unity will download and make the package available in your project.
+
+1. Download the Global Manager script from the [GitHub repository](https://github.com/klazapp/Unity-Global-Manager-Public.git) or via the Unity Package Manager.
+2. Integrate the script into your Unity project by adding it to a dedicated manager object in your scene.
 
 ## Usage
+
+Attach the `GlobalManager` script to a GameObject in your scene. Access the static variables directly from any script within your project:
+
 ```csharp
-Write Something here
+float currentDeltaTime = GlobalManager.deltaTime;
 ```
 
 ## To-Do List (Future Features)
-- 
+
+- [ ] Integration of global event handling.
+- [ ] Expansion of utility functions, including more complex time-based operations.
 
 ## License
-This utility is released under the [MIT License](LICENSE).
+
+This utility is released under the MIT License, which allows for free use, modification, and distribution within your projects.
