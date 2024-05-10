@@ -1,6 +1,6 @@
 {
   "name": "com.klazapp.globalmanager",
-  "displayName": "Unity Global Manager",
+  "displayName": "Unity Global Manager Private",
   "version": "1.0.0",
   "unity": "2022.3",
   "description": "Enhance your Unity projects with Klazapp's Global Manager, a utility designed to centralize and streamline common game management tasks. This package provides easy access to time-related variables, default transform values, and optimized WaitForSeconds, significantly reducing repetitive code and improving efficiency across your project.",
