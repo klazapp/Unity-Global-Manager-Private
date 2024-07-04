@@ -1,5 +1,5 @@
 {
-    "name": "klazapp.global.manager.editor",
+    "name": "klazapp.global.handler.editor",
     "rootNamespace": "",
     "references": [
         "Unity.Mathematics"
