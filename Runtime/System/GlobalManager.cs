@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace com.Klazapp.Utility
 {
-    public class GlobalManager : MonoBehaviour
+    public class GlobalHandler : MonoBehaviour
     {
         #region Variables
         //Delta times
